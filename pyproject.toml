@@ -19,8 +19,8 @@ dependencies = ["modal>=1.0", "pyyaml>=6"]
 dev = ["pytest"]
 
 [project.urls]
-Homepage = "https://github.com/<your-user>/modalize"
-Issues = "https://github.com/<your-user>/modalize/issues"
+Homepage = "https://github.com/AyoubCherguelaine/modalize"
+Issues = "https://github.com/AyoubCherguelaine/modalize/issues"
 
 [project.scripts]
 modalize = "modalize.cli:main"

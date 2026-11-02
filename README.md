@@ -21,7 +21,7 @@ Your code is uploaded, a container image is built from your requirements, and yo
 ## Install
 
 ```bash
-pip install git+https://github.com/<your-user>/modalize.git
+pip install git+https://github.com/AyoubCherguelaine/modalize.git
 modal setup        # one-time Modal login
 ```
 
@@ -153,7 +153,7 @@ Write checkpoints to a mounted volume path (e.g. `/data/output`). `modalize` flu
 ## Development
 
 ```bash
-git clone https://github.com/<your-user>/modalize.git
+git clone https://github.com/AyoubCherguelaine/modalize.git
 cd modalize
 pip install -e ".[dev]"
 pytest
