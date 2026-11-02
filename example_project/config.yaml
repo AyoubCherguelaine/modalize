@@ -1,0 +1,14 @@
+command: python train.py --model Qwen/Qwen2.5-0.5B --out /data/output
+gpu: L40S
+cpu: 8
+memory: 32768
+timeout: 21600
+python_version: "3.11"
+requirements: requirements.txt
+apt_packages: [git]
+env:
+  HF_HOME: /data/hf
+  PYTHONUNBUFFERED: "1"
+secrets: [huggingface]
+volumes:
+  /data: my-volume

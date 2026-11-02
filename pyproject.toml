@@ -1,0 +1,36 @@
+[project]
+name = "modalize"
+version = "0.1.0"
+description = "Run any local training / fine-tuning project on Modal GPUs and CPUs from a single config.yaml"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "Ayoub Cherguelaine" }]
+keywords = ["modal", "gpu", "fine-tuning", "training", "mlops", "cli"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Intended Audience :: Developers",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["modal>=1.0", "pyyaml>=6"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/<your-user>/modalize"
+Issues = "https://github.com/<your-user>/modalize/issues"
+
+[project.scripts]
+modalize = "modalize.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["modalize"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
